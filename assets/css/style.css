@@ -1417,16 +1417,23 @@ body {
   margin-top: 20px;
 
 }
+/*contact page*/
+.flex-contact{
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+  background-color: rgb(175, 174, 252);  
+  display: flex;
+  flex-direction: row;
+}
 
 /*workshop page*/
 
 .flex-container{
   width: 100%;
-  height: 300px;
-  background-color: rgb(79, 76, 255);
-  text-align: center;
-  align-items: center;
-  
+  height: 350px;
+  padding: 30px;
+  background-color: rgb(79, 76, 255);  
   display: flex;
   flex-direction: row;
 }
@@ -1442,20 +1449,59 @@ body {
   padding: 10px;
   flex: 50%;
   height: 270px;
-  background-color: rgb(255, 0, 0);
+  
 }
 
 .flex-item-right {
   padding: 10px;
   flex: 50%;
   height: 270px;
-  background-color: rgb(255, 0, 0);
+  
 }
-
+.text{
+  color: #fafafa;
+  font-size: 30px;
+}
+.Join{
+  color: #fafafa;
+  font-size: 40px;
+}
+.text-about{
+  color: #fafafa;
+  font-size: 15px;
+}
+.Workshops-button{
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #fafafa;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+}
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
-    width: 40%;
+    width: 100%;
+    height: 700px;   
   }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+    width: 500px;
+    height: 270px;
+    
+  }
+
+  .flex-item-right {
+    margin-top: 100px;
+    padding: 10px;
+    flex: 50%;
+    width: 500px;
+    height: 270px;
+    
+  }
+  
 }
+ 
