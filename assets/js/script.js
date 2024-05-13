@@ -3,18 +3,10 @@
 
 
 /**
- * add event on element
+ * element toggle function
  */
 
-const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
-    for (let i = 0; i < elem.length; i++) {
-      elem[i].addEventListener(type, callback);
-    }
-  } else {
-    elem.addEventListener(type, callback);
-  }
-}
+const toggleElem = function (elem) { elem.classList.toggle("active"); }
 
 
 
@@ -24,90 +16,61 @@ const addEventOnElem = function (elem, type, callback) {
 
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const navLinks = document.querySelectorAll("[data-nav-link]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  overlay.classList.toggle("active");
+for (let i = 0; i < navTogglers.length; i++) {
+  navTogglers[i].addEventListener("click", function () {
+    toggleElem(navbar);
+    toggleElem(overlay);
+  });
 }
-
-addEventOnElem(navTogglers, "click", toggleNavbar);
-
-const closeNavbar = function () {
-  navbar.classList.remove("active");
-  overlay.classList.remove("active");
-}
-
-addEventOnElem(navLinks, "click", closeNavbar);
 
 
 
 /**
- * header active when scroll down to 100px
+ * header sticky & back to top button
  */
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
-const activeElem = function () {
-  if (window.scrollY > 100) {
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 100) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
+    header.classList.add("header-anim");
   } else {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
+    header.classList.remove("header-anim");
   }
-}
-
-addEventOnElem(window, "scroll", activeElem);
-
-
-// for handlling the popup form code
-const loginFormContainer = document.getElementById('loginFormContainer');
-const openLoginFormBtn = document.getElementById('openLoginFormBtn');
-const closeLoginformBtn = document.getElementById('closeLoginFromBtn');
-const signupformcontainer = document.getElementById('signupformcontainer');
-const opensignupFormBtn = document.getElementById('opensignupFormBtn');
-const closesignupformbtn = document.getElementById('closesignupformbtn');
-
-
-openLoginFormBtn.addEventListener('click', () => {
-    loginFormContainer.style.display = 'block';
 });
 
-closeLoginFormBtn.addEventListener('click', () => {
-    loginFormContainer.style.display = 'none';
-});
 
-opensignupFormBtn.addEventListener('click', () => {
-    loginFormContainer.style.display = 'none';
-});
 
-function login() {
-    alert('Welcome user');
+/**
+ * search box toggle
+ */
+
+const searchTogglers = document.querySelectorAll("[data-search-toggler]");
+const searchBox = document.querySelector("[data-search-box]");
+
+for (let i = 0; i < searchTogglers.length; i++) {
+  searchTogglers[i].addEventListener("click", function () {
+    toggleElem(searchBox);
+  });
 }
 
 
-//signup login
 
-opensignupFormBtn.addEventListener('click', () => {
-    signupformcontainer.style.display = 'block';
-});
+/**
+ * whishlist button toggle
+ */
 
-closesignupformbtn.addEventListener('click', () => {
-    signupformcontainer.style.display = 'none';
-});
-openloginFormBtn.addEventListener('click', () => {
-    signupformcontainer.style.display = 'none';
-});
+const whishlistBtns = document.querySelectorAll("[data-whish-btn]");
 
-// dublle login here function
-openloginFormBtn.addEventListener('click', () => {
-    signupformcontainer.style.display = 'none';
-    loginFormContainer.style.display ='block';
-});
-
-
-
- 
+for (let i = 0; i < whishlistBtns.length; i++) {
+  whishlistBtns[i].addEventListener("click", function () {
+    toggleElem(this);
+  });
+}
