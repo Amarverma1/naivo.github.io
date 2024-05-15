@@ -290,9 +290,60 @@ body {
 
 :is(.course, .blog) .section-title { margin-block-end: 40px; }
 
+/*---------------------------------*\
+  #loder
+\*---------------------------------*/
+#loader {
+  border: 16px solid #f3f3f3;
+  border-top: 10px solid blue;
+  border-right: 10px solid green;
+  border-bottom: 10px solid red;
+  border-left: 10px solid pink;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  margin: -76px 0 0 -76px;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -1411,6 +1462,7 @@ color: #202020;
   width: 100%;
   height: 250px;
   padding: 50px;
+  background-color: red;
 
   
   
@@ -1426,7 +1478,7 @@ color: #202020;
 /*contact page*/
 .flex-contact{
   width: 100%;
-  height: 500px;
+  height: 550px;
   padding: 30px;
   background-color: rgb(189, 188, 244);  
   display: flex;
@@ -1441,7 +1493,7 @@ height: 350px;
 .flex-item-contact-right{
   padding: 10px;
   flex: 50%;
-  height: 400px;
+  height: 500px;
   border-radius: 10px;
   background-color: rgb(251, 252, 250);
 }

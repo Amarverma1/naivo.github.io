@@ -421,14 +421,16 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: linear-gradient(180deg, rgb(231, 82, 82), rgb(206, 206, 43));
   padding-block-start: calc(60px + var(--section-padding));
   padding-block-end: var(--section-padding);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background: linear-gradient(315deg, rgb(218, 212, 226) 3%, rgb(128, 177, 226) 38%, rgb(215, 226, 239) 68%, rgb(235, 218, 218) 98%);
+
   
 }
+
 .image-hero{
   width: 350px;
   height: 350px;
@@ -438,13 +440,17 @@ body {
   gap: 30px;
  
 }
+
 span{
   color: red;
 }
 
 .hero-title { 
   margin-block-end: 25px; 
-  font-size: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 80px;
+text-shadow: 5px 4px 5px black;
+color: #313131;
 }
 
 .hero-text {
@@ -454,6 +460,7 @@ span{
 }
 
 .hero-banner {
+  margin-left: 200px;
   max-width: max-content;
   margin-inline: auto;
 }
