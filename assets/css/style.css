@@ -1463,15 +1463,143 @@ color: #202020;
 }
 /* vil part */
 .vil-card{
-  background-color: red;
   text-align: center;
   
 }
 .vil-card img{
   align-items: center;
   justify-content: center;
-  margin-left: 25%;
-  font-size: 20px;
+  margin-left: 35%;
+  width: 80px;
+  height: 80px;
 }
-@media (min-width: 768px) {
+.vil-card h3{
+  color: #202020;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+.vil-card img{
+  margin-left: 190px;
+}
+
+}
+/*------------------------------------*/
+   /*Contact page
+/*---------------------------------------*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e4e4f8;
+  box-sizing: border-box;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.flex-contact{
+  width: 100%;
+  height: 550px;
+  padding: 30px;
+  background-color: #e7e7f6;
+  display: flex;
+  flex-direction: row;
+}
+/*Adress block*/
+.flex-item-contact-left {
+padding: 10px;
+flex: 50%;
+height: 500px;
+background-color: transparent;
+border-radius: 10px;
+
+}
+.flex-item-contact-left p{
+  color: black;
+}
+
+.flex-item-contact-right{
+  padding: 10px;
+  flex: 50%;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #effcff;
+}
+label{
+  color: rgb(16, 16, 16);
+  font-size: 15px;
+  padding: 1px;
+}
+input{
+  height: 40px;
+  border-radius: 5px;
+}
+
+input:placeholder-shown{
+  padding: 10px;
+}
+/*workshop */
+.flex-container{
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+  background-color: #e7e7f6;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  /* workshop responsive */
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+    }
+    .flex-item-left {
+      padding: 10px;
+      flex: 50%;
+      width: 500px;
+      height: 270px;
+      
+    }
+  
+    .flex-item-right {
+      margin-top: 100px;
+      padding: 10px;
+      flex: 50%;
+      height: 270px;
+      
+    }
+    .flex-item-right img{
+      width: 300px;
+      height:250px;
+  }
+
+
+  .flex-contact{
+    flex-direction: column;
+    width: 100%;
+    height: 1100px; 
+  }
+  .flex-item-contact-right{
+    margin-top: 3px;
+  }
+ 
 }
