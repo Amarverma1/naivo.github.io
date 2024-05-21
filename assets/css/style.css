@@ -1655,7 +1655,12 @@ input:placeholder-shown{
   /* contact responsive */
   
   
-
+.h1{
+  font-size: 60px;
+}
+.hero-content{
+  width: 90%;
+}
 
   .flex-contact{
     flex-direction: column;
