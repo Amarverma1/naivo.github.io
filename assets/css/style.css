@@ -1483,6 +1483,11 @@ color: #202020;
 }
 
 }
+@media (max-width: 800px){
+  .vil-card img{
+    margin-left: 100px;
+  }
+}
 /*------------------------------------*/
    /*Contact page
 /*---------------------------------------*/
@@ -1628,10 +1633,6 @@ input:placeholder-shown{
     margin-left: 0;
     
   }
-
-
-
-
 
 }
 
