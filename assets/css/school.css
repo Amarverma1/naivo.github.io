@@ -441,8 +441,14 @@ body {
  
 }
 
-span{
+.india{
   color: red;
+}
+.no1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 5px 4px 5px rgb(151, 16, 16);
+  color: blue;
+  font-size: 120px;
 }
 
 .hero-title { 
@@ -568,8 +574,28 @@ color: #313131;
 
 .about-item .item-text { font-weight: var(--fw-500); }
 
+/*------------------------------------*\
+#Curriculum category
+\*------------------------------------*/
+.join-schools{
+  height: 250px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ color: white;
+}
 
-
+.join-schools div{
+  width: 150px;
+  
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+}
+.join-schools div img{
+  width: 150px;
+  height: 140px;
+}
 
 
 /*-----------------------------------*\
@@ -810,115 +836,6 @@ color: #313131;
 
 
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-.footer {
-  background-repeat: no-repeat;
-  background-color: var(--eerie-black-2);
-  color: var(--gray-x-11);
-  font-size: var(--fs-5);
-}
-
-.footer-top {
-  display: grid;
-  gap: 30px;
-}
-
-.footer-brand-text { margin-block: 20px; }
-
-.footer-brand .wrapper {
-  display: flex;
-  gap: 5px;
-}
-
-.footer-brand .wrapper .span { font-weight: var(--fw-500); }
-
-.footer-link { transition: var(--transition-1); }
-
-.footer-link:is(:hover, :focus) { color: var(--kappel); }
-
-.footer-list-title {
-  color: var(--white);
-  font-family: var(--ff-league_spartan);
-  font-size: var(--fs-3);
-  font-weight: var(--fw-600);
-  margin-block-end: 10px;
-}
-
-.footer-list .footer-link { padding-block: 5px; }
-
-.newsletter-form { margin-block: 20px 35px; }
-
-.newsletter-form .input-field {
-  background-color: var(--white);
-  padding: 12px;
-  border-radius: var(--radius-5);
-  margin-block-end: 20px;
-}
-
-.newsletter-form .btn {
-  min-width: 100%;
-  justify-content: center;
-}
-
-.social-list {
-  display: flex;
-  gap: 25px;
-}
-
-.social-link { font-size: 20px; }
-
-.footer-bottom {
-  border-block-start: 1px solid var(--eerie-black-1);
-  padding-block: 30px;
-}
-
-.copyright { text-align: center; }
-
-.copyright-link {
-  color: var(--kappel);
-  display: inline-block;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-.back-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  background-color: var(--orange-peel);
-  color: var(--white);
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 50%;
-  z-index: 3;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-}
-
-.back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
-}
-
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1008,7 +925,7 @@ color: #313131;
   .container { max-width: 740px; }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
-
+  
 
 
   /**
@@ -1418,42 +1335,3 @@ color: #313131;
 
 
 }}
-
-/*contact page*/
-.flex-contact{
-  width: 100%;
-  height: 550px;
-  padding: 30px;
-  background-color: rgb(189, 188, 244);  
-  display: flex;
-  flex-direction: row;
-}
-.flex-item-contact-left {
-padding: 10px;
-flex: 50%;
-height: 350px;
-
-}
-.flex-item-contact-right{
-  padding: 10px;
-  flex: 50%;
-  height: 500px;
-  border-radius: 10px;
-  background-color: rgb(251, 252, 250);
-}
-label{
-  color: rgb(16, 16, 16);
-  font-size: 15px;
-  padding: 1px;
-}
-input{
-  height: 40px;
-  border-radius: 5px;
-}
-textarea{
-  margin-top: 20px;
-}
-input:placeholder-shown{
-  padding: 10px;
-}
-
