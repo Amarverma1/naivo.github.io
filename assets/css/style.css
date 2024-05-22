@@ -1557,97 +1557,84 @@ input:placeholder-shown{
 /*workshop */
 
 
-.flex-container{
+.flex-workshop{
   width: 100%;
-  height: 410px;
+  height: 300px;
   padding: 30px;
-  background-color: rgb(79, 76, 255);  
+  background-color: #4949c4;
   display: flex;
   flex-direction: row;
+  
 }
-
-
 .flex-item-left {
   padding: 10px;
   flex: 50%;
-  height: 300px;
+  height: 500px;
+  background-color: transparent;
+  border-radius: 10px;
   
-}
-
-.flex-item-right {
-  padding: 10px;
-  flex: 50%;
-  height: 300px;
-  margin-left: 150px;
-  margin-top: 40px;
-}
-.text{
-  color: #fafafa;
-  font-size: 40px;
-}
-.Join{
-  color: #fafafa;
-  font-size: 40px;
-}
-.text-about{
-  color: #fafafa;
-  font-size: 15px;
-}
+  }
+  .flex-item-right {
+    padding: 5px;
+    flex: 50%;
+    height: 500px;
+    background-color: transparent;
+  }
+  
+ .flex-item-right img{
+    width: 350px;
+    height: 250px;
+    margin-left: 200px;
+  }
+  .flex-item-left h1{
+    color: #e4e4f8;
+    font-size: 30px;
+  }
+  .text-about{
+    color: #e4e4f8;
+    font-size: 15px;
+    padding: 5px;
+  }
+  
 .Workshops-button{
+  display: flex;
+  flex-direction: row;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  color: blue;
   border: 1px solid black;
   background-color: #fafafa;
-  width: 200px;
+  width: 220px;
   height: 50px;
+  padding: 9px;
   border-radius: 5px;
-  transition: 2s;
+  transition: 1s;
 }
 .Workshops-button:hover{
   color: white;
   background-color: #04AA6D;
 }
+
 /* workshop Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
-  .flex-container {
+  .flex-workshop{
     flex-direction: column;
     width: 100%;
-    height: 30%;   
-    
-  }
-  .text{
-    font-size: 25px;
-  }
-  .Join{
-    font-size: 30px;
-  }
-  .text-about{
-
-    font-size: 13px;
-  }
-  
-  
-  .flex-item-left {
-    padding: 5px;
-    flex: 50%;
-    width: 500px;
-    
-  }
-
-  .flex-item-right {
-    margin-top: 10px;
-    padding: 5px;
-    flex: 50%;
-    height: 300px;
-  margin-left: 0;
-    
+    height: 660px; 
   }
   .flex-item-right img{
-    width: 300px;
+    width: 230px;
     height: 250px;
-  } 
-  
+    margin-left: 0;
+    
+  }
+
+
+
+
+
 }
+
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
