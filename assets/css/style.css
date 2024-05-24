@@ -510,7 +510,11 @@ color: #202020;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 90px;
 }
-
+@media (max-width: 800px) {
+  .h1-title{
+    font-size: 10px;
+  }
+}
 
 
 
