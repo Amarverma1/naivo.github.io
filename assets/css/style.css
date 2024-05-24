@@ -982,7 +982,9 @@ color: #202020;
 }
 
 .social-link { font-size: 20px; }
-
+.social-link:hover{
+  color: #1ab79d;
+}
 .footer-bottom {
   border-block-start: 1px solid var(--eerie-black-1);
   padding-block: 30px;

@@ -848,7 +848,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #0b53ce;
+  background-color: #525ded;
   color: white;
   padding: 5px 20px;
   border: none;
@@ -1342,3 +1342,117 @@ input:placeholder-shown{
 }
 
 
+
+@media (min-width: 992px) {
+  /**
+   * FOOTER
+   */
+
+   .footer-brand,
+   .footer-list:last-child { grid-column: auto; }
+ 
+   .newsletter-form .btn { padding-block: 10px; }
+
+
+  /**
+   * FOOTER
+   */
+
+   .footer .grid-list { grid-template-columns: 1fr 0.6fr 0.6fr 1.2fr; }
+
+}
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  background-repeat: no-repeat;
+  background-color: var(--eerie-black-2);
+  color: var(--gray-x-11);
+  font-size: var(--fs-5);
+  background-color: rgb(0, 0, 0);
+}
+
+.footer-top {
+  display: grid;
+  gap: 30px;
+}
+
+.footer-brand-text { 
+  margin-block: 20px;
+  color: #ccc;
+ }
+
+.footer-brand .wrapper {
+  display: flex;
+  gap: 5px;
+  color: #ccc;
+}
+
+.footer-brand .wrapper .span { font-weight: var(--fw-500); }
+
+.footer-link { transition: var(--transition-1); }
+
+.footer-link:is(:hover, :focus) { color: var(--kappel); }
+
+.footer-list-title {
+  color: var(--white);
+  font-family: var(--ff-league_spartan);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin-block-end: 10px;
+}
+
+.footer-list .footer-link { 
+  padding-block: 5px; 
+  color: #ccc;
+}
+
+.newsletter-form { margin-block: 20px 35px; }
+
+.newsletter-form .input-field {
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: var(--radius-5);
+  margin-block-end: 20px;
+}
+.footer-list-text{
+  color: #ccc;
+}
+
+.newsletter-form .btn {
+  min-width: 100%;
+  justify-content: center;
+  background-color: #525ded;
+  color: #effcff;
+}.newsletter-form .btn:hover{
+   background-color: #0b1d5e;
+}
+
+.social-list {
+  display: flex;
+  gap: 25px;
+}
+
+.social-link { 
+  font-size: 20px; 
+  color: #ccc;
+}
+
+.footer-bottom {
+  border-block-start: 1px solid var(--eerie-black-1);
+  padding-block: 30px;
+}
+
+.copyright { 
+  text-align: center;
+  color: #ccc;
+}
+
+.copyright-link {
+  color: var(--kappel);
+  display: inline-block;
+  color: aqua;
+}
