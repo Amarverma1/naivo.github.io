@@ -512,8 +512,27 @@ color: #202020;
 }
 @media (max-width: 800px) {
   .h1-title{
-    font-size: 10px;
+    font-size: 2px;
   }
+
+  .h1{
+    font-size: 45px;
+  }
+  .no1{
+    font-size: 1px;
+  }
+  .Expolre{
+    width: 90%;
+  }
+  .Expolre .btn{
+    width: 75px;
+  }
+  .Expolre .btn .span{
+    font-size: 12px;
+  }
+  
+  
+  
 }
 
 
@@ -1652,20 +1671,4 @@ input:placeholder-shown{
     height: 1180px; 
   }
   
-.h1{
-  font-size: 40px;
-}
-.hero-text{
-  font-size: 15px;
-}
-.Expolre{
-  width: 90%;
-}
-.Expolre .btn{
-  width: 75px;
-}
-.Expolre .btn .span{
-  font-size: 12px;
-}
-
 }

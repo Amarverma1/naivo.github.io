@@ -470,7 +470,11 @@ color: #313131;
   max-width: max-content;
   margin-inline: auto;
 }
-
+@media (max-width: 800px) {
+  .h1{
+    font-size: 42px;
+  }
+}
 
 
 
