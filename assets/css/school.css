@@ -472,7 +472,10 @@ color: #313131;
 }
 @media (max-width: 800px) {
   .h1{
-    font-size: 42px;
+    font-size: 50px;
+  }
+  .no1{
+    font-size: 90px;
   }
 }
 
