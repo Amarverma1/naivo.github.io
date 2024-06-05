@@ -1678,3 +1678,63 @@ input:placeholder-shown{
   }
   
 }
+
+
+
+
+
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+
+.categor :is(.section-subtitle, .section-title) { text-align: center; }
+
+.categor .section-title { margin-block-end: 60px; }
+
+.category-car {
+  --title-color: var(--space-cadet-2);
+  --meta-color: var(--old-lavender);
+  --icon-color: var(--ultramarine-blue);
+  --icon-bg: var(--white);
+
+  background-color: #f5f4f4;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+
+
+.category-car .card-icon {
+  background-color: var(--icon-bg);
+  color: #1ab79d;
+  font-size: 30px;
+  height: 60px;
+  min-width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-4);
+  transition: var(--transition-1);
+  
+}
+.category-car .card-title {
+   color: black; 
+  }
+
+.category-car .card-meta {
+  color: var(--meta-color);
+  font-weight: var(--fw-600);
+  margin-block-start: 5px;
+}
+
+.category-car:is(:hover, :focus-within) {
+  --title-color: var(--white);
+  --meta-color: var(--white);
+  --icon-color: var(--white);
+  --icon-bg: var(--white_10);
+  background-color: #cfcfcf;
+}
+

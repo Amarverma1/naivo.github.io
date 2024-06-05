@@ -486,7 +486,8 @@ color: #313131;
   #CATEGORY
 \*-----------------------------------*/
 
-.category :is(.section-subtitle, .section-title) { text-align: center; }
+.category :is(.section-subtitle, .section-title) {
+   text-align: center; }
 
 .category .section-title { margin-block-end: 60px; }
 
