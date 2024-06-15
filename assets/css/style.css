@@ -1758,9 +1758,9 @@ input:placeholder-shown{
   border-radius: 10px;
 }
 
+/* Style for the pupup news form */
 
-
-header {
+header{
   background-color: #333;
   color: white;
   padding: 20px;
@@ -1786,11 +1786,8 @@ article {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .modal {
-  display: none;
+  display: ;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -1807,14 +1804,15 @@ article {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 500px;
+  
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .close-button {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -1825,7 +1823,8 @@ article {
   cursor: pointer;
 }
 .responsive-image {
-  width: 100%;
+  width: 40%;
+  height: 100px;
   height: auto;
   margin-bottom: 20px;
 }

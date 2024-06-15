@@ -111,12 +111,12 @@ openloginFormBtn.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const subscribeButton = document.getElementById('subscribeButton');
-  const modal = document.getElementById('popUpForm');
+  const popUpNewsForm = document.getElementById('popUpNewsForm');
+  const modal = document.getElementById('popUpnews');
   const closeButton = document.querySelector('.close-button');
-  const subscribeForm = document.getElementById('subscribeForm');
 
-  subscribeButton.addEventListener('click', () => {
+
+  popUpnews.addEventListener('click', () => {
       modal.style.display = 'block';
   });
 
@@ -130,10 +130,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
-  subscribeForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      alert('Thank you for subscribing!');
-      modal.style.display = 'none';
-      subscribeForm.reset();
-  });
 });
