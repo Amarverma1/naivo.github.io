@@ -511,6 +511,7 @@ color: #202020;
   font-size: 16px;
   text-align: center;
   margin-block: 18px 20px;
+  text-align: justify;
 }
 .section-text{
   color: var(--eerie-black-1);
@@ -542,7 +543,7 @@ color: #202020;
   }
 
   .h1{
-    font-size: 50px;
+    font-size: 45px;
   }
   .hero-text{
     font-size: 12px;
@@ -561,6 +562,16 @@ color: #202020;
   
   
   
+}
+@media (max-width: 500px) {
+
+  .Expolre .btb{
+    width: 100px;
+  }
+  
+  .Expolre .btb .span{
+    font-size: 11px;
+  }
 }
 
 
