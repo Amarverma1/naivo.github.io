@@ -497,10 +497,15 @@ color: #202020;
   padding: 0px 20px;
   border-radius: var(--radius-5);
   overflow: hidden;
+  box-shadow: 0 9px #999;
 }
-.Expolre span{
 
+.btb:active {
+  background-color: var(--kappel);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
+
 .hero-text {
   color: var(--eerie-black-1);
   font-size: 16px;
@@ -537,17 +542,17 @@ color: #202020;
   }
 
   .h1{
-    font-size: 50px;
+    font-size: 55px;
   }
   .hero-text{
     font-size: 12px;
   }
   
   .Expolre{
-    width: 95%;
+    width: 100%;
   }
-  .Expolre .btn{
-    width: 80px;
+  .Expolre .btb{
+    width: 100px;
   }
   .Expolre .btn .span{
     font-size: 15px;
