@@ -484,6 +484,7 @@ color: #202020;
 .Expolre{
   display: flex;
   justify-content: space-around;
+
 }.btb{
   background-color: var(--kappel);
   color: var(--white);
@@ -539,7 +540,7 @@ color: #202020;
     font-size: 50px;
   }
   .hero-text{
-    font-size: 15px;
+    font-size: 12px;
   }
   
   .Expolre{
@@ -1507,7 +1508,12 @@ color: #202020;
   }
 
 }
-/* vil part */
+
+
+/* VIL STYLE  */
+
+
+
 .vil-card{
   text-align: center;
   
@@ -1534,9 +1540,13 @@ color: #202020;
     margin-left: 100px;
   }
 }
+
+
 /*------------------------------------*/
    /*Contact page
 /*---------------------------------------*/
+
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -1572,7 +1582,20 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  
+  .flex-contact{
+    flex-direction: column;
+    width: 100%;
+    height: 1180px; 
+  }
+  
+}
+
+
 /*Adress block*/
+
+
 .flex-item-contact-left {
 padding: 10px;
 flex: 50%;
@@ -1605,7 +1628,10 @@ input{
 input:placeholder-shown{
   padding: 10px;
 }
-/*workshop */
+
+/*==================================================
+   WORKSHOP STYLE
+/*=================================================*/
 
 
 .flex-workshop{
@@ -1666,7 +1692,12 @@ input:placeholder-shown{
   background-color: #04AA6D;
 }
 
-/* workshop Responsive layout - makes a one column-layout instead of two-column layout */
+
+/*==================================================
+   workshop Responsive layout - makes a one column-layout instead of two-column layout
+/*=================================================*/
+
+
 @media (max-width: 800px) {
   .flex-workshop{
     flex-direction: column;
@@ -1681,21 +1712,6 @@ input:placeholder-shown{
   }
 
 }
-
-
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-  /* contact responsive */
-  .flex-contact{
-    flex-direction: column;
-    width: 100%;
-    height: 1180px; 
-  }
-  
-}
-
-
-
 
 
 /*-----------------------------------*\
