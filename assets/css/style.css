@@ -293,33 +293,85 @@ body {
 /*---------------------------------*\
   #loder
 \*---------------------------------*/
-#loader {
-  border: 16px solid #f3f3f3;
-  border-top: 10px solid blue;
-  border-right: 10px solid green;
-  border-bottom: 10px solid red;
-  border-left: 10px solid pink;
+
+ /* Letter N container */
+ .letter-container {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 70px;
-  height: 70px;
-  margin: -76px 0 0 -76px;
-  border-radius: 50%;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+   width: 200px;
+   height: 200px;
+  top: 45%;
+  left: 45%;
+   z-index: 1;
+  
 }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+
+/* Letter N styling */
+.letter-n {
+   position: relative;
+   width: 50%;
+   height: 100%;
+   margin-left: 50px;
+   opacity: 0; 
+   animation: fadeUp 2s forwards, bounce 1.5s infinite 2s; /* Chaining animations */
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.vertical {
+   position: absolute;
+   width: 20%;
+   height: 60%;
+   background-color: hsl(170, 75%, 41%);
 }
+
+.left {
+   left: 0;
+}
+
+.right {
+   right: 0;
+}
+
+.diagonal {
+   position: absolute;
+   width: 20%;
+   border-radius: 50px;
+   height: 80%;
+   background-color: hsl(170, 75%, 41%);
+   transform: rotate(-45deg);
+   top: -20px;
+   left: 40%;
+}
+
+/* Keyframes for fade up animation */
+@keyframes fadeUp {
+   0% {
+       opacity: 0;
+       transform: translateY(50px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+   0%, 100% {
+       transform: translateY(0);
+       
+   }
+   20%{
+  
+    transform: translateY(-30px);
+   }
+   50% {
+       transform: translateY(-30px);
+       opacity: 0.1;
+   }
+}
+
+
+
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -1756,8 +1808,7 @@ input:placeholder-shown{
 }
 
 .category-car .card-icon {
- background-color: var(--icon-bg);
- color: var(--icon-color);
+ background-image: url(assets\images\images\artificial-intelligence.png);
  font-size: 30px;
  height: 60px;
  min-width: 60px;
@@ -1767,7 +1818,10 @@ input:placeholder-shown{
  transition: var(--transition-1);
 }
 
-.category-car .card-title { color: var(--title-color); }
+.category-car .card-title { color: var(--title-color);
+
+
+}
 
 .category-car .card-meta {
  color: var(--meta-color);
@@ -1793,16 +1847,85 @@ input:placeholder-shown{
   background-color: hsl(170, 75%, 41%);
 }
 .card{
-  font-family: 'Courier New', Courier, monospace;
- color: black;
- font-weight: 550;
+
+  font-family: var(--ff-league_spartan);
   
 }
 .icon{
- 
-  color:hsl(170, 75%, 41%);
+  color: black;
+  
+  
 }
+
 .image-meeting{
   border-radius: 10px;
 }
+.button{
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.button a{
+  background-color: var(--kappel);
+  color: var(--white);
+  font-family: var(--ff-league_spartan);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 0 9px #999;
+  position: relative;
+}
 
+.button a:active {
+  background-color: var(--kappel);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button a:hover {
+  padding-right: 25px;
+}
+
+
+
+.fixed-button{
+  position: fixed;
+  width: 70px;
+  height: 90px;
+  background-color: red;
+  z-index: 1;
+  bottom: 120px;
+  right: 0px;
+  border-radius: 20px 2px 2px 20px;
+
+}
+
+
+.fixed-btn {
+  font-size: 40px;
+  padding: 15px;
+  border-radius: var(--radius-circle);
+  pointer-events: none;
+  transition: var(--transition-1);
+}
+
+.back-top-btn.active {
+  transform: translateY(10px);
+  opacity: 1;
+  pointer-events: all;
+}
