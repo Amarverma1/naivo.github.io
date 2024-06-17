@@ -1003,6 +1003,7 @@
       overflow: hidden;
   }
   .container1{
+ 
       border-radius: 10px;
       box-shadow: -5px -5px 10px #fff,
                   5px 5px 10px #babebc;
@@ -1172,3 +1173,5 @@
   margin-top: 9px;
   color: var(--white);
 }
+
+
