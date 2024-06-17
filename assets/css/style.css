@@ -1901,13 +1901,15 @@ input:placeholder-shown{
   padding-right: 25px;
 }
 
-
+/*================================
+  FIXED BAR
+==================================*/
 
 .fixed-button{
   position: fixed;
-  width: 70px;
+  width: 60px;
   height: 90px;
-  background-color: red;
+  background-color: rgb(179, 174, 174);
   z-index: 1;
   bottom: 120px;
   right: 0px;
@@ -1915,21 +1917,26 @@ input:placeholder-shown{
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
+}
+.fixed-button img{
+  height: 25px;
+  width: 25px;
 
 }
-
+.one{
+  box-shadow: 0 2px #666;
+}
 
 .fixed-btn {
+  
   cursor: pointer;
-  margin-left: 12px;
-  font-size: 22px;
-  padding: 13px;
+  margin-left: 10px;
+  padding: 10px;
   pointer-events: none;
   transition: var(--transition-1);
 }
 
-.back-top-btn.active {
+.fixed-btn.active {
   transform: translateY(10px);
   opacity: 1;
   pointer-events: all;
