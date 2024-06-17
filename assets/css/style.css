@@ -386,6 +386,14 @@ body {
     left: 17px; 
     margin-top: 12px;
 
+}.letter-container {
+  position: absolute;
+   width: 200px;
+   height: 200px;
+  top: 45%;
+  left: 37%;
+   z-index: 1;
+  
 }
 
 /* Media query for tablets */
