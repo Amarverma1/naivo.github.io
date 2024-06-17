@@ -334,8 +334,8 @@ body {
 .diagonal {
    position: absolute;
    width: 20%;
-   border-radius: 50px;
    height: 80%;
+   border-radius: 50px;
    background-color: hsl(170, 75%, 41%);
    transform: rotate(-45deg);
    top: -20px;
@@ -371,7 +371,49 @@ body {
 }
 
 
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .letter-n {
+    width: 40px; 
+    height: 70px; 
+  }
 
+  .letter-n .vertical,
+  .letter-n .diagonal {
+    width: 8px; 
+  }
+  .letter-n .diagonal {
+    left: 17px; 
+    margin-top: 12px;
+
+}
+
+/* Media query for tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  .letter-n {
+    width: 40px; 
+    height: 80px; 
+  }
+
+  .letter-n .vertical,
+  .letter-n .diagonal {
+    width: 8px; 
+  }
+
+  .letter-n .diagonal {
+    left: 16px; 
+  }
+}
+
+
+@media (min-width: 993px) {
+  .letter-n {
+    width: 50px; 
+    height: 100px; 
+  }
+
+}
+}
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -1632,7 +1674,7 @@ color: #202020;
   }
 }
 
-/* Styles for desktops and larger devices */
+
 @media (min-width: 992px) {
  
   .vil-card h3 {
@@ -1651,6 +1693,17 @@ color: #202020;
 /*------------------------------------*/
    /*Contact page
 /*---------------------------------------*/
+.section.Contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+}
 
 
 input[type=text], select, textarea {
@@ -1734,6 +1787,10 @@ input{
 input:placeholder-shown{
   padding: 10px;
 }
+
+
+
+
 
 /*==================================================
    WORKSHOP STYLE
