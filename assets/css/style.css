@@ -1912,14 +1912,19 @@ input:placeholder-shown{
   bottom: 120px;
   right: 0px;
   border-radius: 20px 2px 2px 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
 
 }
 
 
 .fixed-btn {
-  font-size: 40px;
-  padding: 15px;
-  border-radius: var(--radius-circle);
+  cursor: pointer;
+  margin-left: 12px;
+  font-size: 22px;
+  padding: 13px;
   pointer-events: none;
   transition: var(--transition-1);
 }
